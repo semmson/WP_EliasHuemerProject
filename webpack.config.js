@@ -29,7 +29,7 @@ const config = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         type: "asset/resource",
         generator: {
           filename: "./img/[name][ext]",

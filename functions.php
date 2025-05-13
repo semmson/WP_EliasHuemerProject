@@ -177,6 +177,6 @@ require get_template_directory() . '/inc/customizer.php';
 function my_awesome_scripts()
 {
 	wp_enqueue_style("style", get_template_directory_uri() . "/assets/main.css", [], false);
-	wp_enqueue_script("script", get_template_directory_uri() . "/assets/main.min.js", [], false);
+	wp_enqueue_script("script", get_template_directory_uri() . "/assets/main.min.js", [], false, true); //true at the end to enqueue scripts in the footer
 }
 add_action("wp_enqueue_scripts", "my_awesome_scripts");
