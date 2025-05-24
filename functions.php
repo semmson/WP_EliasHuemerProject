@@ -180,3 +180,10 @@ function my_awesome_scripts()
 	wp_enqueue_script("script", get_template_directory_uri() . "/assets/main.min.js", [], false, true); //true at the end to enqueue scripts in the footer
 }
 add_action("wp_enqueue_scripts", "my_awesome_scripts");
+
+
+function register_menus() {
+	register_nav_menu("main-massively-menu", "Main Massively Menu");
+}
+
+add_action("init","register_menus"); 
