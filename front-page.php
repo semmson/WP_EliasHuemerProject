@@ -1,22 +1,28 @@
 <?php get_header(); ?>
 <!-- Intro -->
     <div id="intro">
-        <h1>This is<br />
-        Massively</h1>
-        <p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-        and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
-        <ul class="actions">
-            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-        </ul>
+        <div class="linkwrapper">          
+            <h2><a><span>Check out </span> Somnambule</a></h2>
+            <ul class="actions">
+                <li>
+                    <div class="buttonwrapper">
+                        <a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+                    </div>
+                </li>
+            </ul>         
+        </div>
+        <!-- <p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+        and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p> -->
+        
     </div>
 
     <!-- Header -->
-    <header id="header">
-        <a href="index.html" class="logo">Massively</a>
-    </header>
+     
+    <!-- Logo -->
+		<?php get_template_part("template-parts/logo") ?>
 
-    <!-- here was navbar -->
-     <?php get_template_part("template-parts/navbar") ?>
+    <!-- Navbar -->
+        <?php get_template_part("template-parts/navbar") ?>
 
     <!-- Main -->
     <div id="main">
@@ -86,6 +92,7 @@
                     <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
                     </ul>
+                    
                 </article>
                 <article>
                     <header>

@@ -11,6 +11,7 @@ get_header();
 ?>
 
 <!-- Header -->
+ 
 	<!-- Logo -->
 		<?php get_template_part("template-parts/logo") ?>
 
@@ -23,15 +24,10 @@ get_header();
 			<!-- Post -->
 				<section class="post">
 					<header class="major">
-						<span class="date">April 25, 2017</span>
+						<!-- <span class="date">April 25, 2017</span> -->
 						<h1><?= the_title()?></h1>
 						<?php 
-						$post_id = get_the_ID();
-						$post   = get_post( $post_id );
-						/* $location = get_post_meta( $post->ID, 'event_location' );
-						$date = get_post_meta( $post->ID, 'event_date' );
-						$ticket_link = get_post_meta( $post->ID, 'ticket_link' );
-						*/
+						
 						?>
 					</header>
 					<div class="image main"><img src="<?= get_the_post_thumbnail_url() ?>" alt="" /></div>

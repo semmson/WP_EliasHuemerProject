@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:300,600,900");
 
 /*
 	Massively by HTML5 UP
@@ -2104,11 +2104,11 @@ input, select, textarea {
 		button.icon.solo,
 		.button.icon.solo {
 			position: relative;
-			width: 4rem;
-			height: 4rem;
-			line-height: 4rem;
-			border-radius: 4rem;
-			text-indent: 4rem;
+			width: 2.4rem;
+			height: 2.4rem;
+			line-height: 2.5rem;
+			border-radius: 2.4rem;
+			text-indent: 2.4rem;
 			overflow: hidden;
 			padding: 0;
 			white-space: nowrap;
@@ -2684,7 +2684,7 @@ input, select, textarea {
 		display: flex;
 		cursor: default;
 		list-style: none;
-		margin-left: -1rem;
+		margin: 0 0 0 -1rem;
 		padding-left: 0;
 	}
 
@@ -3233,7 +3233,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/elsn_org.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: cover;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3310,6 +3310,7 @@ input, select, textarea {
 		text-align: center;
 		z-index: 1;
 		min-height: 100vh;
+		text-shadow: 0px 1px 9px rgba(0,0,0,0.8);
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3321,7 +3322,7 @@ input, select, textarea {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#intro a:hover {
+			#intro .linkwrapper:hover a {
 				border-bottom-color: transparent;
 				color: $color-lightblue !important;
 			}
@@ -3353,16 +3354,26 @@ input, select, textarea {
 		#intro button,
 		#intro .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #ffffff;
+			box-shadow: inset 0 0 0 3px #ffffff;
 			color: #ffffff !important;
 		}
 
-			#intro input[type="submit"]:hover,
+		#intro .linkwrapper {
+			cursor: pointer;
+		}
+
+		#intro .buttonwrapper {
+			line-height: 0;
+			border-radius: 2.4rem;
+			box-shadow: 0 0 9px #00000092;
+		}
+
+			/* #intro input[type="submit"]:hover,
 			#intro input[type="reset"]:hover,
 			#intro input[type="button"]:hover,
-			#intro button:hover,
-			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px $color-lightblue;
+			#intro button:hover, */
+			#intro .linkwrapper:hover .button {
+				box-shadow: inset 0 0 0 3px $color-lightblue;
 				color: $color-lightblue !important;
 			}
 
@@ -3384,9 +3395,19 @@ input, select, textarea {
 					background-color: $color-lightblue;
 				}
 
-		#intro h1 {
-			font-size: 5rem;
+		#intro h2 {
+			text-transform: uppercase;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 2.5rem;
+			font-weight: 900;
+			letter-spacing: 0.075em;
 			line-height: 1;
+			margin-bottom: 0.75rem;
+			float: left;
+		}
+
+		#intro h2 span {
+			font-weight: 600;
 		}
 
 		#intro p {
@@ -3515,7 +3536,7 @@ input, select, textarea {
 		-ms-user-select: none;
 		user-select: none;
 		height: 20rem;
-		padding-bottom: 8rem;
+		padding-bottom: 7rem;
 		position: relative;
 		text-align: center;
 		z-index: 2;
@@ -3527,11 +3548,11 @@ input, select, textarea {
 
 		#header a {
 			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			border-bottom: none;
 		}
 
 			#header a:hover {
-				border-bottom-color: transparent;
+				/* border-bottom-color: transparent; */
 				color: $color-lightblue !important;
 			}
 
@@ -3562,21 +3583,26 @@ input, select, textarea {
 			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
-			border-style: solid;
+			/* border-style: solid;
 			border-color: #ffffff;
-			border-width: 5px !important;
+			border-width: 5px !important; */
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
-			font-weight: 900;
+			font-weight: 600;
 			letter-spacing: 0.075em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
+			text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.918);
+		}
+		
+		#header .logo span {
+			font-weight: 900;
 		}
 
 			#header .logo:hover {
-				border-color: $color-lightblue !important;
+				/* border-color: $color-lightblue !important; */
 				color: $color-lightblue !important;
 			}
 
@@ -3584,7 +3610,7 @@ input, select, textarea {
 
 			#header {
 				height: 14rem;
-				padding-bottom: 4rem;
+				padding-bottom: 3rem;
 			}
 
 		}
@@ -3592,7 +3618,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding-bottom: 3rem;
+				padding-bottom: 2rem;
 			}
 
 				#header .logo {
@@ -3614,7 +3640,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(255, 255, 255, 0.385);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3649,6 +3675,7 @@ input, select, textarea {
 		#nav a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
+			text-shadow: 0px 1px 5px rgba(0,0,0,0.8);
 		}
 
 			#nav a:hover {
@@ -3717,7 +3744,7 @@ input, select, textarea {
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.1);
+						background-color: rgba(255, 255, 255, 0.151);
 					}
 
 				#nav ul.links li.current-menu-item {
@@ -3726,6 +3753,7 @@ input, select, textarea {
 
 					#nav ul.links li.current-menu-item a {
 						color: #1e252d;
+						text-shadow: none;
 					}
 
 						#nav ul.links li.current-menu-item a:hover {
@@ -3779,7 +3807,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 6rem 8rem;
 		}
 
 			#main > .post header.major > .date {

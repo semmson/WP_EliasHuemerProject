@@ -187,3 +187,18 @@ function register_menus() {
 }
 
 add_action("init","register_menus"); 
+
+
+include get_template_directory() . '/custom_post_types/event.php';
+/* include get_template_directory() . '/custom_post_types/taxDate.php';
+include get_template_directory() . '/custom_post_types/taxLocation.php'; */ // used ACF instead of taxonomies
+/* include get_template_directory() . '/custom_post_types/eventFields.php'; */ // fields didnt save so im using ACF
+
+
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
