@@ -46,69 +46,80 @@ get_header();
 								</tr>
 							</thead>
 							<tbody>
-								
-								
-
 								<?php
-									$args = array(
-										"post_type" => "event",
-										'orderby'    => 'id',
-                   						'order'      => 'ASC',
-									);
-									$query = new WP_Query($args);
+								$args = array(
+									'meta_query' => array(array(
+										'key' => 'event_date',
+										'value' => date('Ymd', strtotime("now")),
+										'compare' => '>',
+										'type' => 'DATE'
+									)),
+									'post_type' => 'event', 
+									'meta_key' => 'event_date', 
+									'orderby' => 'meta_value', 
+									'order' => 'ASC'
+								);
+								$query = new WP_Query($args);
+								while($query->have_posts()){
+									$query->the_post();
 									
-									
-									while($query->have_posts()){
-										$query->the_post();
-										if($post) {
-											$location = get_post_meta( $post->ID, 'event_location' );
-											$date = get_post_meta( $post->ID, 'event_date' );
-											$ticket_link = get_post_meta( $post->ID, 'ticket_link' );
-											$information = get_post_meta( $post->ID, 'event_information' );
-											echo "<tr>";
-											echo "<td>".$date[0]."</td>";
-											echo "<td>".$location[0]."</td>";
-											echo "<td>".$information[0]."</td>";
-											echo "</tr>";
-										}
+									if($post) {
+										$location = get_post_meta( $post->ID, 'event_location' );
+										$date = get_post_meta( $post->ID, 'event_date' );
+										$ticket_link = get_post_meta( $post->ID, 'ticket_link' );
+										$information = get_post_meta( $post->ID, 'event_information' );
+										echo "<tr>";
+										echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
+										echo "<td>".$location[0]."</td>";
+										echo "<td>".$information[0]."</td>";
+										echo "</tr>";
 									}
-									?>
-									<tr>
-										<td>Item 2</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<?php
-									$args = array(
-										'meta_query' => array(array(
-											'key' => 'event_date',
-											'value' => date('Ymd', strtotime("+3 weeks")),
-											'compare' => '<',
-											'type' => 'DATE'
-										)),
-										'post_type' => 'event', 
-										'meta_key' => 'event_date', 
-										'orderby' => 'meta_value', 
-										'order' => 'ASC'
-									);
-									$query = new WP_Query($args);
-									while($query->have_posts()){
-										$query->the_post();
-										
-										if($post) {
-											$location = get_post_meta( $post->ID, 'event_location' );
-											$date = get_post_meta( $post->ID, 'event_date' );
-											$ticket_link = get_post_meta( $post->ID, 'ticket_link' );
-											$information = get_post_meta( $post->ID, 'event_information' );
-											echo "<tr>";
-											echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
-											echo "<td>".$location[0]."</td>";
-											echo "<td>".$information[0]."</td>";
-											echo "</tr>";
-										}
-									}
-								?>
+								}
+							?>
 
+							</tbody>
+						</table>
+					</div>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Location</th>
+									<th>Details</th>
+								</tr>
+							</thead>
+							<tbody>
+							<?php
+								$args = array(
+									'meta_query' => array(array(
+										'key' => 'event_date',
+										'value' => date('Ymd', strtotime("now")),
+										'compare' => '<',
+										'type' => 'DATE'
+									)),
+									'post_type' => 'event', 
+									'meta_key' => 'event_date', 
+									'orderby' => 'meta_value', 
+									'order' => 'ASC'
+								);
+								$query = new WP_Query($args);
+								while($query->have_posts()){
+									$query->the_post();
+									
+									if($post) {
+										$location = get_post_meta( $post->ID, 'event_location' );
+										$date = get_post_meta( $post->ID, 'event_date' );
+										$ticket_link = get_post_meta( $post->ID, 'ticket_link' );
+										$information = get_post_meta( $post->ID, 'event_information' );
+										echo "<tr>";
+										echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
+										echo "<td>".$location[0].'<span class="fi fi-at"></span></td>';
+										echo "<td>".$information[0]."</td>";
+										echo "</tr>";
+									}
+								}
+							?>
 							</tbody>
 							<!-- <tfoot>
 								<tr>
@@ -117,7 +128,11 @@ get_header();
 								</tr>
 							</tfoot> -->
 						</table>
-					<h4>this is tourpage</h4>
+					</div>
+
+					<span class="fi fi-de"></span> Deutschland
+
+					<span class="fi fi-us"></span> United States					
 					
 					<div class="image main"><img src="<?= get_the_post_thumbnail_url() ?>" alt="" /></div>
 					<p><?= the_content()?></p>
