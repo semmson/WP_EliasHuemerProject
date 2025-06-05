@@ -238,7 +238,7 @@ input, select, textarea {
 	blockquote {
 		border-left: solid 4px;
 		font-style: italic;
-		margin: 0 0 2rem 0;
+		margin: 2rem 0 0 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
 
@@ -2593,6 +2593,10 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.image img.logo {
+		width: 15rem;
+	}
+
 		.image img {
 			display: block;
 		}
@@ -2901,6 +2905,25 @@ input, select, textarea {
 	}
 
 /* Section/Article */
+	section.videos {
+		text-align: center;
+	}
+	section iframe.video.embeded {
+		display: block;
+		aspect-ratio: 16/9;
+		width: 75%;
+		margin: 0 auto 5rem auto;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		section iframe.video.embeded {
+			width: 100%;
+			max-width: 25rem;
+		}
+
+
+	}
 
 	section.special, article.special {
 		text-align: center;
@@ -2944,7 +2967,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 0 0;
 			text-align: center;
 		}
 
@@ -3019,6 +3042,10 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75rem 0.75rem;
+		}
+
+		table td:last-child {
+			text-align: right;
 		}
 
 		table th {
@@ -3814,7 +3841,7 @@ input, select, textarea {
 				margin-top: -2rem;
 			}
 
-			#main > .post header.major > h1, #main > .post header.major h2 {
+			#main > .post header.major > h1, #main > .post header.major h2, .videos > header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
@@ -3989,6 +4016,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		text-align:center;
 	}
 
 		#footer input, #footer select, #footer textarea {

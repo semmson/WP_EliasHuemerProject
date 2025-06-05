@@ -2,7 +2,7 @@
 <!-- Intro -->
     <div id="intro">
         <div class="linkwrapper">          
-            <h2><a><span>Check out </span> Somnambule</a></h2>
+            <h2><a>Somnambule<span> - Out Soon </span></a></h2>
             <ul class="actions">
                 <li>
                     <div class="buttonwrapper">
@@ -28,7 +28,7 @@
     <div id="main">
 
         <!-- Featured Post -->
-            <article class="post featured">
+            <!-- <article class="post featured">
                 <header class="major">
                     <span class="date">April 25, 2017</span>
                     <h2><a href="#">And this is a<br />
@@ -37,93 +37,88 @@
                     facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
                     amet nullam sed etiam veroeros.</p>
                 </header>
-                <a href="#" class="image main"><img src="<?= get_template_directory_uri() ?>/images/pic01.jpg" alt="" /></a>
+                <a href="#" class="image main"><img src="<?= get_template_directory_uri() ?>/images/elsn_schmaler.gif" alt="" /></a>
                 <ul class="actions special">
                     <li><a href="#" class="button large">Full Story</a></li>
                 </ul>
-            </article>
+            </article> -->
+            
 
         <!-- Posts -->
             <section class="posts">
                 <article>
                     <header>
-                        <span class="date">April 24, 2017</span>
-                        <h2><a href="#">Sed magna<br />
-                        ipsum faucibus</a></h2>
+                        <!-- <span class="date">April 24, 2017</span> -->
+                        <h2><a href="#">Elsn</h2>
+                        <h5>Piano, Comp, Bandleader</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/pic02.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
+                    <a class="image fit"><img src="<?= get_template_directory_uri() ?>/images/elsn_lassig_fin.jpg" alt="" /></a>
+                    
+                    <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
+                    </ul> -->
                 </article>
                 <article>
                     <header>
-                        <span class="date">April 22, 2017</span>
-                        <h2><a href="#">Primis eget<br />
-                        imperdiet lorem</a></h2>
+                        <!-- <span class="date">April 22, 2017</span> -->
+                        <h2><a href="#">Almonther Almighty</h2>
+                        <h5>Bass</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/pic03.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
+                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/monty_lassig_fin.jpg" alt="" /></a>
+                    
+                    <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
+                    </ul> -->
                 </article>
                 <article>
                     <header>
-                        <span class="date">April 18, 2017</span>
-                        <h2><a href="#">Ante mattis<br />
-                        interdum dolor</a></h2>
+                        <!-- <span class="date">April 18, 2017</span> -->
+                        <h2><a href="#">Timsn</a></h2>
+                        <h5>Guitar</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/pic04.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
+                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/timmi_lassig_fin.jpg" alt="" /></a>
+                    
+                    <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
+                    </ul> -->
                 </article>
                 <article>
                     <header>
-                        <span class="date">April 14, 2017</span>
-                        <h2><a href="#">Tempus sed<br />
-                        nulla imperdiet</a></h2>
+                        <!-- <span class="date">April 14, 2017</span> -->
+                        <h2><a href="#">Dansn</a></h2>
+                        <h5>Drums</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/pic05.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
+                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/dans_lassig_fin.jpg" alt="" /></a>
+                    
+                    <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
+                    </ul> -->
                     
                 </article>
-                <article>
-                    <header>
-                        <span class="date">April 11, 2017</span>
-                        <h2><a href="#">Odio magna<br />
-                        sed consectetur</a></h2>
-                    </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/pic06.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
-                        <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-                <article>
-                    <header>
-                        <span class="date">April 7, 2017</span>
-                        <h2><a href="#">Augue lorem<br />
-                        primis vestibulum</a></h2>
-                    </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/pic07.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
-                        <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
-                </article>
+            </section>
+            
+            <section class="videos">
+                <header class="major">
+                    <h2>Videos</h2>
+                </header>
+                <h2>Live at Porgy&Bess Vienna</h2>
+                <iframe class="video embeded" src="https://www.youtube.com/embed/0a7zjnjoraA?si=9ZQpk2Me98UKvnrd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <h2>Jazz Nights at Anton Bruckner Privatuniversität</h2>
+                <iframe class="video embeded" src="https://www.youtube.com/embed/cUnRZGGv22o?si=f1WyvuCCCikLKmAZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
+           
+            <section>
+                    <blockquote>„A gfierige Partie“</blockquote><h6>- Miles Davis</h6> 
+                    <blockquote>„Jahrhundertgruppn“</blockquote><h6>- Jean-Jacques Rousseau</h6>
+                    <blockquote>„Kompakt, griffig, gschmackig“</blockquote><h6>- New York Times</h6>
+                    <blockquote>„Like a treelegged Andromeda in the nightsky of Linz,<br>floating above the neonreflections of the limelights on the wet pavement.<br>Like nothing else.”</blockquote><h6>- Salvador Dali, Kronen Zeitung</h6>
+            </section>
         <!-- Footer -->
-            <footer>
+            <!-- <footer>
                 <div class="pagination">
-                    <!--<a href="#" class="previous">Prev</a>-->
+                    <a href="#" class="previous">Prev</a>
                     <a href="#" class="page active">1</a>
                     <a href="#" class="page">2</a>
                     <a href="#" class="page">3</a>
@@ -133,7 +128,7 @@
                     <a href="#" class="page">10</a>
                     <a href="#" class="next">Next</a>
                 </div>
-            </footer>
+            </footer> -->
 
     </div>
 <?php get_footer(); ?>

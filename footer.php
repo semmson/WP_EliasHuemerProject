@@ -14,6 +14,15 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
+									<div class="image"><img class="logo" src="<?= get_template_directory_uri() ?>/images/logo.png" alt="" /></div>
+									<ul class="icons alt">
+									<li><a href="https://www.youtube.com/watch?v=0a7zjnjoraA&ab_channel=EliasHuemer" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+									<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<li><a href="https://www.instagram.com/eliashuemerproject/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-spotify"><span class="label">Spotify</span></a></li>
+								</ul>
+						</section>
+						<!-- <section>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field">
@@ -33,9 +42,9 @@
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
+						</section> -->
+						<!-- <section class="contact"> -->
+							<!-- <section class="alt">
 								<h3>Address</h3>
 								<p>1234 Somewhere Road #87257<br />
 								Nashville, TN 00000-0000</p>
@@ -56,8 +65,10 @@
 									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
-							</section>
-						</section>
+							</section> -->
+
+							
+						<!-- </section> -->
 					</footer>
 
 				<!-- Copyright -->
