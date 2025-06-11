@@ -3049,6 +3049,11 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75rem 0.75rem;
+			white-space: nowrap;
+		}
+
+		table td:nth-child(3) {
+			white-space: wrap;
 		}
 
 		table td:last-child {
@@ -3070,6 +3075,15 @@ input, select, textarea {
 
 				table th {
 					font-size: 0.9rem;
+				}
+
+				table td {
+					padding-left: 0.50rem;
+					padding-right: 0.20rem;
+				}
+
+				table td:last-child {
+					padding-right: 0.50rem;
 				}
 
 			}
@@ -3888,7 +3902,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 4rem 0.5rem 2rem 0.5rem; 
 				}
 
 					#main > .post header.major > .date {
