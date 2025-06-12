@@ -23,15 +23,11 @@ get_header();
 
 			<!-- Post -->
 				<section class="post">
-					<header class="major">
-						<!-- <span class="date">April 25, 2017</span> -->
-						<h1><?= the_title()?></h1>
-						<div class="image main"><img src="<?= get_the_post_thumbnail_url() ?>" alt="" /></div>
-						<p><?= the_content()?></p>
-						<img src="<?= get_template_directory_uri() ?>/images/lassig_alle.gif" alt="" />
-					</header>
+					<video class="video" autoplay loop muted>
+						<source src="<?= get_template_directory_uri() ?>/images/liddleviddle_small.mp4" type="video/mp4" />
+						</video>
 					
-					
+					<h2 style="text-align: center">coming soon..</h2>
 				</section>
 		</div>
 

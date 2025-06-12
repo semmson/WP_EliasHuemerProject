@@ -70,10 +70,11 @@ get_header();
 										$information = get_post_meta( $post->ID, 'event_information' );
 										$country = get_post_meta($post->ID,'event_country');
 										echo "<tr>";
-										echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
+										/* echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; */                // converts date from Ymd to F j, Y format
+										echo "<td>".date('d. M Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
 										echo '<td><span class="fi fi-'.$country[0].'"></span>'.$location[0].'</td>';
 										echo '<td>'.$information[0].'</td>';
-										echo '<td><a href="'.$ticket_link[0].'" class="button primary small">Learn More</a></td>';
+										echo '<td><a href="'.$ticket_link[0].'"><i class="fa fa-external-link-alt" aria-hidden="true"></i></a></td>';
 										echo "</tr>";
 									}
 								}
@@ -84,7 +85,7 @@ get_header();
 					</div>
 					<div class="image fit"><img src="<?= get_template_directory_uri() ?>/images/elsn_blurry_thin.jpg" alt=""/></div>
 
-					<h4>Past Events</h4>
+					<h4 style="text-align: center">Past Events</h4>
 					<div class="table-wrapper">
 						<table>
 							
@@ -113,10 +114,11 @@ get_header();
 										$information = get_post_meta( $post->ID, 'event_information' );
 										$country = get_post_meta($post->ID,'event_country');
 										echo "<tr>";
-										echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
+										/* echo "<td>".date('F j, Y', strtotime($date[0]))."</td>"; */                // converts date from Ymd to F j, Y format
+										echo "<td>".date('d. M Y', strtotime($date[0]))."</td>"; // converts date from Ymd to F j, Y format
 										echo '<td><span class="fi fi-'.$country[0].'"></span>'.$location[0].'</td>';
-										echo '<td>'.$information[0]."</td>";
-										echo '<td>'.'<a href="#" class="button primary small disabled">Past Event</a>'.'</td>';
+										echo '<td>'.$information[0].'</td>';
+										echo '<td><a href="'.$ticket_link[0].'"><i class="fa fa-external-link-alt" aria-hidden="true"></i></a></td>';
 										echo "</tr>";
 									}
 								}

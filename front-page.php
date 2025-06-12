@@ -2,11 +2,11 @@
 <!-- Intro -->
     <div id="intro">
         <div class="linkwrapper">          
-            <h2><a>Somnambule<span> - Out Soon </span></a></h2>
+            <h2><a href="<?= get_home_url()."/music" ?>">Somnambule<span> Coming Soon... </span></a></h2>
             <ul class="actions">
                 <li>
                     <div class="buttonwrapper">
-                        <a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+                        <a href="<?= get_home_url()."/music" ?>" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
                     </div>
                 </li>
             </ul>         
@@ -49,10 +49,10 @@
                 <article>
                     <header>
                         <!-- <span class="date">April 24, 2017</span> -->
-                        <h2><a href="#">Elsn</h2>
+                        <h2>Elsn</h2>
                         <h5>Piano, Comp, Bandleader</h5>
                     </header>
-                    <a class="image fit"><img src="<?= get_template_directory_uri() ?>/images/elsn_lassig_fin.jpg" alt="" /></a>
+                    <a href="https://www.instagram.com/el_iashuemer/?hl=de" target="_blank" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/elsn_lassig_fin.jpg" alt="" /></a>
                     
                     <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
@@ -61,10 +61,10 @@
                 <article>
                     <header>
                         <!-- <span class="date">April 22, 2017</span> -->
-                        <h2><a href="#">Almonther Almighty</h2>
+                        <h2>Almonther Almighty</h2>
                         <h5>Bass</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/monty_lassig_fin.jpg" alt="" /></a>
+                    <a href="https://www.instagram.com/almontheralshoufi/?hl=de" target="_blank" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/monty_lassig_fin.jpg" alt="" /></a>
                     
                     <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
@@ -73,10 +73,10 @@
                 <article>
                     <header>
                         <!-- <span class="date">April 18, 2017</span> -->
-                        <h2><a href="#">Timsn</a></h2>
+                        <h2>Timsn</h2>
                         <h5>Guitar</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/timmi_lassig_fin.jpg" alt="" /></a>
+                    <a href="https://www.instagram.com/_nanu33__/?hl=de" target="_blank" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/timmi_lassig_fin.jpg" alt="" /></a>
                     
                     <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>
@@ -85,10 +85,10 @@
                 <article>
                     <header>
                         <!-- <span class="date">April 14, 2017</span> -->
-                        <h2><a href="#">Dansn</a></h2>
+                        <h2>Dansn</h2>
                         <h5>Drums</h5>
                     </header>
-                    <a href="#" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/dans_lassig_fin.jpg" alt="" /></a>
+                    <a href="https://www.instagram.com/daniel_semmelrock/?hl=de" target="_blank" class="image fit"><img src="<?= get_template_directory_uri() ?>/images/dans_lassig_fin.jpg" alt="" /></a>
                     
                     <!-- <ul class="actions special">
                         <li><a href="#" class="button">Full Story</a></li>

@@ -22,5 +22,5 @@
 
 <body class="is-preload" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-	<div id="wrapper" class="fade-in"></div>
+	<div id="wrapper" class="fade-in">
 
