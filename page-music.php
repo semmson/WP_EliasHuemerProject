@@ -25,7 +25,7 @@ get_header();
 				<section class="post">
 					<video class="video" autoplay loop muted>
 						<source src="<?= get_template_directory_uri() ?>/images/liddleviddle_small.mp4" type="video/mp4" />
-						</video>
+					</video>
 					
 					<h2 style="text-align: center">coming soon..</h2>
 				</section>

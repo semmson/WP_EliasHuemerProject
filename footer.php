@@ -73,7 +73,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Elias Huemer Project 2025</li><li>Website by Daniel Semmelrock and <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div> <!-- Wrapper closed -->

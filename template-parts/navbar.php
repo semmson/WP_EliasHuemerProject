@@ -4,7 +4,7 @@
             wp_nav_menu([
                 "theme_location" => "main-massively-menu",
                 "menu_class" => "links",
-                'container'=> false
+                'container'=> "ul"
             ]);
         ?>
         <!-- <ul class="links">
